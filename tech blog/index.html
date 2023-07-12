@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./nav.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-title">
+            <h4>Tech Blog</h4>
+        </div>
+        <!-- <div class="toggle">
+            <ion-icon name="menu-outline"></ion-icon>
+        </div> -->
+        <div class="menu_content">
+            <div class="menu-bar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                </span>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg>
+                </span>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="tech">
+        <div class="logo">
+            <img src="./assets/logo.png" width="8%" />
+            <div class="tech-title">
+                <h2>Tech Blog</h2>
+            </div>
+            <div class="tech-text">
+                <span>
+                    Accusamus ea excepturi hic impedit iste neque soluta, sunt tempore
+                </span><br>
+                <span>
+                    voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </span>
+            </div>
+            <div class="btn-main">
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+    </div>
+    <div class="section2-main">
+        <div class="section2para">
+            <h3>TECHNOLOGIES</h3>
+            <span>Most popular</span><br>
+            <span>articles</span>
+            <p>Dolor sit amet, consectetur adipisicing elit.<br> Aliquid autem beatae consectetur cumque<br>
+                dolores
+                dolorum
+                enim inventore iure minus <br>nostrum nulla numquam quam quia quod,<br> reprehenderit.</p>
+            <div class="btn-main">
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+        <div class="img2-main">
+            <div class="img1">
+                <img src="./Assets/tech-img.jpg" height="500px" width="420px">
+                <div class="card-main">
+                    <img src="./Assets/research.jpg" width="240px" height="240px">
+                    <div class="card-content">
+                        <h4>Mobile phone</h4>
+                        <h4>$100.00</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="img2">
+                <img src="./Assets/tech-img1.jpg" height="500px" width="420px">
+                <div class="card-main">
+                    <img src="./Assets/design.jpg" width="240px" height="240px">
+                    <div class="card-content">
+                        <h4>Mobile phone</h4>
+                        <h4>$100.00</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sec3-main">
+        <div class="design-title">
+            <h2>Modern compact, perfectly new</h2>
+            <h2>design</h2>
+        </div>
+        <hr class="sec3-line">
+        <div>
+            <p>Numquam, quo recusandae sunt voluptates.<br> Assumenda cumque dolorem
+                eius
+                excepturi<br> inventore laboriosam provident quam suscipit<br> voluptate voluptates. </p>
+        </div>
+    </div>
+    <div class="sec4-main">
+        <div class="sec4-para">
+            <span>Our website</span>
+            <div class="test">
+                <p>Follow us</p>
+                <a>tech@blog.com</a>
+            </div>
+        </div>
+        <div class="imgsec4-main">
+            <div>
+                <img src="./Assets/image1.jpg" width="16%" height="240px">
+                <img src="./Assets/image2.jpg" width="16%" height="240px">
+                <img src="./Assets/image3.jpg" width="16%" height="240px">
+                <img src="./Assets/image4.jpg" width="16%" height="240px">
+                <img src="./Assets/image5.jpg" width="16%" height="240px">
+            </div>
+            <div class="total-button">
+                <button>See Card</button>
+                <button>See Card</button>
+                <button>See Card</button>
+                <button>See Card</button>
+                <button>see card</button>
+            </div>
+        </div>
+    </div>
+    <div class="sec5-main">
+        <div class="sec5-title1">
+            <hr>
+            <h2>Popular-Tech-Blog</h2>
+        </div>
+        <hr>
+        <div class="sec5-title2">
+            <h2>Useful-Tech-Blog</h2>
+        </div>
+    </div>
+    <hr>
+    <div class="sec6-main">
+        <div class="sec6-img">
+            <img src="./Assets/mobile earbuds.jpg" width="400px" height="350px"><br>
+            <a>MOBILE EARBUDS</a>
+            <h3>Smartphones</h3>
+        </div>
+        <div class="sec6-img">
+            <img src="./Assets/mobile earbuds2.jpg" width="400px" height="350px"><br>
+            <a>MOBILE EARBUDS</a>
+            <h3>Bubs</h3>
+        </div>
+        <div class="sec6-img">
+            <img src="./Assets/mobile earbuds3.jpg" width="400px" height="350px"><br>
+            <a>MOBILE EARBUDS</a>
+            <h3>Smart watch</h3>
+        </div>
+    </div>
+    <div class="sec7-main">
+        <div class="sec7-para">
+            <h3>Read Our</h3>
+            <h3>news</h3>
+            <p>Consectetur adipisicing elit. Architecto atque<br> culpa eius, error est expedita facilis fuga
+                impedit<br>
+                inventore
+                labore laborum neque obcaecati odit<br>placeat quo quod repellendus tenetur voluptates.
+
+            </p>
+        </div>
+        <div class="news-main">
+            <img src="./Assets/read news.jpg" width="100%">
+            <div class="news-button">
+                <a>Read news</a>
+            </div>
+        </div>
+    </div>
+    <div class="sec8-main">
+        <div class="sec8-main-content">
+            <h2>Easy to use for everyone</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad autem distinctio, ea eum harum id illo
+                itaque laborum maxime natus quaerat quia quo reiciendis.</p>
+        </div>
+        <div class="bg_black">
+
+        </div>
+    </div>
+    <div class="sec9-main">
+        <div class="sec9-para">
+            <ul>
+                <li><a href="" onclick="changeImage(event)">Programming</a></li>
+                <div class="sec9-line"></div>
+                <li><a href="" onclick="changeImage(event)">Research</a></li>
+                <hr class="sec9-line">
+                <li><a href="" onclick="changeImage(event)">Development</a></li>
+                <hr class="sec9-line">
+                <li><a href="" onclick="changeImage(event)">Phases</a></li>
+                <hr class="sec9-line">
+                <li><a href="" onclick="changeImage(event)">Design</a></li>
+            </ul>
+        </div>
+        <div class="sec9-img">
+            <img src="./Assets/programming.jpg" id="image" width="80%">
+        </div>
+    </div>
+    <div class="sec10-main">
+        <div>
+            <img src="./Assets/feedback.jpg">
+        </div>
+        <div class="sec10-content">
+            <div class="sec10-cont">
+                <svg style="color:white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" heigth="40">
+                    <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" fill="white"></path>
+                </svg>
+                <p>"Aliquid architecto ex nemo nulla rerum <br>saepe, sit veritatis. Blanditiis in <br> laboriosam
+                    maiores
+                    nisi,
+                    nostrum <br> officia."
+                </p>
+                <div class="cont-author">
+                    <h4>Jose Richardson</h4>
+                    <h5>ARTIST</h5>
+                </div>
+            </div>
+        </div>
+        <div class="sec10-para">
+            <span>500 +</span>
+            <h3>Your feedback</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Distinctio ea eum eveniet ex explicabo,
+                facilis, incidunt<br> maxime quibusdam quidem quod saepe, tempora <br>temporibus unde. Consectetur
+                dolor
+                id nesciunt placeat <br>reprehenderit.</p>
+            <div class="btn-main">
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+    </div>
+    <div class="sec11-main">
+        <div class="container">
+            <details>
+                <summary>How do I create accordion?</summary>
+                <div>
+                    The tags <em>details</em> and <em>summary</em> have you covered.
+                </div>
+            </details>
+        </div>
+
+        <div>
+            <img src="./Assets/feedback.jpg">
+        </div>
+    </div>
+    <div class="footer-main">
+        <div class="footer-content1">
+            <img src="./Assets/logo.png" width="20%"><br>
+            <span class="Ab">Ab debitis dolorem dolorum</span><br>
+            <div class="copyright">
+                <span>© COPYRIGHT 2030 MOBIRISE -</span><br>
+                <span>ALL RIGHTS RESERVED</span>
+            </div>
+        </div>
+        <div class="footer-content2">
+            <span>Weisgasse 403 87274 Herzogenrath</span><br>
+            <span>98 7654 321 120</span><br>
+            <span>mobi@rise.com</span>
+        </div>
+        <div class="footer-content3">
+            <ul>
+                <li><a>TWITTER</a></li>
+                <li><a>FACEBOOK</a></li>
+                <li><a>INSTAGRAM</a></li>
+                <li><a>LINKEDIN</a></li>
+            </ul>
+        </div>
+        <div class="footer-content4">
+            <p>Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit. Quod<br> distinctio eveniet odio maxime,
+                hic<br>
+                voluptate iusto officiis natus ut quis.</p>
+        </div>
+    </div>
+    <script>
+        const faqItems = document.querySelectorAll('.faq');
+
+        faqItems.forEach(faqItem => {
+            const question = faqItem.querySelector('.question');
+            const answer = faqItem.querySelector('.answer');
+            const arrowIcon = question.querySelector('.bi-caret-down');
+
+            arrowIcon.addEventListener('click', () => {
+                faqItem.classList.toggle('active'); // Toggle the "active" class on the FAQ item
+            });
+        });
+
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
